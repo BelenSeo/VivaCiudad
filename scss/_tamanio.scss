@@ -1,0 +1,50 @@
+$fullAncho: 100%;
+$vista:desktop;
+$SpacesSizes: (
+  0: 0px,
+  5: 5px
+);
+$PaddingsType: (
+  pa: padding,
+  pt: padding-top
+);
+
+
+
+@each $classType, $type in $PaddingsType {
+  @each $classSize, $size in $SpacesSizes {
+    .#{$classType}-#{$classSize} {
+      #{$type}: #{$size};
+    }
+  }
+}
+
+.col-50{
+	width:$fullAncho/2;
+}
+
+
+body{
+	@if $vista == desktop{
+	h1{
+	   font:{
+	   size:4em;
+	   weight:bold;
+	        }
+	   }
+	 h2{
+	    font: {
+	    size:3em;
+	    weight:normal;
+	          }
+	   } 
+	
+	} @else if $vista == mobile {
+	h1{
+	font-size: 20px;
+	}
+	h2{
+	font-size: 16px;
+	}
+	}
+}

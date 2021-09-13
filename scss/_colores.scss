@@ -1,0 +1,24 @@
+@import "fuentes";
+
+$azul:blue;
+$negro:rgb(0,0,0);
+$celeste:light-blue;
+$gradiante: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+.col-lg-6{
+	h1{color:$azul;}
+
+}
+.background{color:celeste;}
+	
+
+.texto{
+	background:lightblue;
+	&__encabezado{
+	color:amarillo;
+	}
+    &__parrafo{
+    font-size:20px;
+
+    }
+}

@@ -1,0 +1,17 @@
+@import "colores";
+
+.col-lg-12, .col-xs-12, .col-lg-4, .container-fluid, .row {
+	padding: 20;
+	margin: 20;
+}
+.nav-link{
+	color:$azul!important;
+}
+
+.nav{
+	position: sticky;
+	width: auto;
+	top: 20px;
+	z-index: 9999;
+	background-color: lightblue;
+}

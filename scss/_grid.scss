@@ -1,0 +1,25 @@
+$fondo: grey;
+$colorLetra: white;
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1px 1px;
+	text-align: center;
+	justify-content: stretch;
+	font-size: 1.5rem;
+	grid-template-areas:
+	"mock lista"
+	
+}
+
+.mock{
+	grid-area: mock;
+}
+
+.lista{
+	grid-area: lista;
+	background-color: $fondo;
+	color: $colorLetra;
+
+}

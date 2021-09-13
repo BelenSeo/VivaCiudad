@@ -1,0 +1,44 @@
+@import "colores";
+@import "fuentes";
+@import "nav";
+@import "contenido";
+@import "tamanio";
+@import "grid";
+
+$btnsFooter:(
+comentarios:#FF5733,
+privacidad:#33E6FF,
+condiciones:#AC33FF,
+);
+
+$btnsNav:(
+1:#DAF7A6 ,
+2:#FF5733 ,
+3:#C70039 ,
+4:#900C3F ,
+5:#900C3F ,
+);
+
+@each $btn,$color in $btnsNav{
+	.btn--#{$btn}{
+	background-color:$color;
+	}
+}
+
+@each $btn,$color in $btnsFooter{
+	.btn--#{$btn}{
+	background-color:$color;
+	}
+}
+
+p{
+	color: blue;
+}
+a{
+	background:lightblue;
+}
+
+
+
+
+

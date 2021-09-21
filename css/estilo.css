@@ -20,15 +20,62 @@ body {
 
 }
 
-.row @media (max-width: 1200px){
+ @media (max-width: 1200px){
+.navbar-nav{
+      width: 100%;
+      
+
+}
+.collapse{
+      width: 100%;
+      border:0px;
+      padding:0px;
+
+}
+
+.reporte-mobile{
+  display: none;
+}
 
 
 }
 
-.row @media (min-width: 576px){
+
+
+
+
+
+
+@media (max-width: 576px){
+ 
+ .logo{
+     justify-content: center;
+     padding-left: 130px;
+ }
+ 
+.navbar-nav{
+      width: 100%;
+      border:0px;
+      padding:0px;
+
+}
+
+.reportemobile{
+height: 200px;
+}
+
+.reporte{
+  display: none;
+}
+
 
 
 }
+
+.logo{
+
+}
+
 
 
 .card {
@@ -40,6 +87,22 @@ body {
 .fa {
     color: #d9d5d5
 }
+
+.reporte {
+    position: relative;
+    padding-bottom: 100%;
+    height:100%;
+}
+.reporte iframe {
+ position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin:0px;
+}
+
+
 
 #inp1 {
     background-color: #222222;
@@ -88,6 +151,11 @@ body {
   transition: all 1s;
   animation-timing-function: ease;
   transform: rotate(25deg);
+}
+
+.mock1{
+  size: 50px;
+  max-width: auto;
 }
 .img{
   width: auto;
@@ -169,7 +237,8 @@ body h2 {
   padding: 20;
   margin: 20; }
 
-.nav-link {
+.navbar
+-link {
   color: black !important;
   padding-right:20px;
   border: 30px;
@@ -186,7 +255,8 @@ li {
   max-width: auto;
 }
 
-li nav{
+li navbar
+{
   border: 30px;
   justify-content: center; 
   text-align: center;  
@@ -198,7 +268,20 @@ li:hover {
 }
 
 
-.navbar {
+.contenido h3{
+
+  text-align: center;
+  color: red;
+}
+.contenido h1{
+
+  text-align: center;
+  color: #33E6FF;
+}
+
+
+.navbar
+bar {
   border-radius: 15px;
 
   width: auto;
@@ -226,6 +309,7 @@ body h2 {
 h3{
   align-content: center;
   padding: 20px;
+
 }
 .version{
   padding: 20px;
@@ -270,11 +354,15 @@ ul{
 
 .titulo {
   text-align: center;
-  padding: 50px 0; }
+  padding: 50px 0; 
+padding-left: 20px;}
   @media only screen and (min-width: 768px) {
     .titulo__principal {
       font-size: 35px;
-      font-weight: bold; } }
+      font-weight: bold; 
+      padding-left: 50px;
+      text-align: center;
+      justify-content:  center;} }
   @media only screen and (max-width: 1024px) {
     .titulo__principal {
       font-size: 50px;
@@ -383,41 +471,96 @@ a {
     grid-template-columns: 100%;
     /* grid-template-rows: auto auto auto; */
     grid-column-gap: 20px;
-    grid-row-gap: 50px;
+    grid-row-gap: 0px;
     grid-template-areas: 
     "header"
-    "nav"
+    "navbar"
     "section3"
-  "footer";
+    "footer";
+
+ 
+ 
 
 }
-.section3{
+
+@media only screen and (max-width: 1024px) {
+#section3{
   grid-template-areas: section3;
   display: grid;
   grid-template-columns: 1fr 1fr ;
   grid-template-rows: auto ;
   grid-template-areas: 
   "tituloReseña"
-    "profile1 reseña"
-    "reseña2 profile2"
+  "profile1" 
+  "reseña"
+  "profile2" 
+  "reseña2"
   
-  
+ } 
+
+}
+#section1{
+  grid-template-areas: section1;
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+      grid-template-rows: 1 ;
+      grid-template-areas: 
+      "vivir mock3"
+}
+
+.app{
+  grid-template-areas: app;
+      display: grid;
+}
+
+.mock3{
+  grid-template-areas: mock3;
+      display: grid;
+  justify-content: center;
+  align-content: center;
 
 }
 
+.vivir{
+    grid-template-areas: vivir;
+      display: grid;
+  justify-content: center;
+  align-content: center;
+
+}
+
+
+
+ @media only screen and (min-width: 768px) {
+    #section3 { 
+      grid-template-areas: section3;
+      display: grid;
+      grid-template-columns: 1fr ;
+      grid-template-rows: auto ;
+      grid-template-areas: 
+      "tituloReseña"
+      "profile1" 
+      "reseña"
+      "profile2" 
+      "reseña2" } }
+
 h2
 {
-  margin: 50px;
+  margin: 10px;
   padding: 20px;
 }
 h3{
 
-  margin: 50px;
+  margin: 10px;
 }
 h4{
 
   margin: 50px;
 
+}
+
+h6{
+  padding-bottom: 5px;
 }
 
 .gridPadreUX{
@@ -431,7 +574,8 @@ h4{
     grid-row-gap: 50px;
     grid-template-areas: 
     "header"
-    "nav"
+    "navbar
+    "
     "section5"
     "footer";
 }
@@ -457,13 +601,16 @@ h4{
     grid-row-gap: 50px;
     grid-template-areas: 
     "header"
-    "nav"
+    "navbar
+    "
     "section4"
     "footer";
 }
 }
 }
 }
+
+
 
 }
 .section4{
@@ -529,5 +676,12 @@ h1{
   background-color: grey;
   }
 
+
+
+
+.section1{
+
+
+}
 
 

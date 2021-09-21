@@ -1,13 +1,10 @@
-Fa
-if--active: active scss
-seleccionar en donde estoy paradx
+
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
 
 html,
-body {
-    height: 100%
-}
+  
+
 
 * {
     padding: 0px;
@@ -17,8 +14,22 @@ body {
 body {
     background-color: #dde3fb;
     display: grid;
-    place-items: center
+    place-items: center;
+    height: 100%
+    width : auto;
+
 }
+
+.row @media (max-width: 1200px){
+
+
+}
+
+.row @media (min-width: 576px){
+
+
+}
+
 
 .card {
     background-color: #222222;
@@ -160,19 +171,27 @@ body h2 {
 
 .nav-link {
   color: black !important;
-  padding-right:200px;
+  padding-right:20px;
   border: 30px;
-  
+  justify-content: center; 
+  text-align: center; 
+  width: auto; 
    }
 
 
 
 li {
   
-  padding-right: 200px;
+  padding-right: 100px;
   max-width: auto;
 }
 
+li nav{
+  border: 30px;
+  justify-content: center; 
+  text-align: center;  
+
+}
 li:hover {
   background-color: violet;
   color:white;
@@ -252,11 +271,11 @@ ul{
 .titulo {
   text-align: center;
   padding: 50px 0; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .titulo__principal {
       font-size: 35px;
       font-weight: bold; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (max-width: 1024px) {
     .titulo__principal {
       font-size: 50px;
       font-weight: bold; } }
